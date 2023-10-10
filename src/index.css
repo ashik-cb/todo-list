@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+:root {
+  --primary: hsl(220, 98%, 61%);
+  --check-bg: linear-gradient(120deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+
+  --gray: hsl(0, 0%, 98%);
+  --blue-50: hsl(236, 33%, 92%);
+  --blue-100: hsl(233, 11%, 84%);
+  --blue-200: hsl(236, 9%, 61%);
+}
+
+.dark {
+  --gray: hsl(235, 21%, 11%);
+  --blue-50: hsl(235, 24%, 19%);
+  --blue-100: hsl(234, 39%, 85%);
+  --blue-200: hsl(234, 39%, 85%);
+}
