@@ -9,13 +9,20 @@ export const StyledTodo = styled.div`
   gap: 5px;
 `
 
-export const Task = styled.p``
+export const Task = styled.p`
+  text-decoration: ${({ completed }) => (completed ? "line-through" : "none")};
+`
 
-export const Todo = () => {
+export const Todo = ({ id, task, completed, handleComplete }) => {
   return (
     <StyledTodo>
-      <Radio />
-      <Task>Complete online JavaScript course</Task>
+      <Radio
+        onChange={() => {
+          handleComplete(id)
+        }}
+        checked={completed}
+      />
+      <Task completed={completed}>{task}</Task>
     </StyledTodo>
   )
 }
